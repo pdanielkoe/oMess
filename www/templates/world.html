@@ -1,0 +1,53 @@
+<ion-view view-title="World Mess">
+    <ion-content>
+
+        <div ng-repeat="message in messages" class="list card card-mod">
+            <div class="row">
+                <div class="col text-energized">
+                    <strong>{{message.name}} :</strong>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    {{message.text}}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="text-right text-energized msg-time">
+                        {{message.time|date:"H:mm, d MMM yy"}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+    <ion-footer-bar class="bar bar-footer bar-dark bar-footer-mod">
+        <div class="col">
+            <div class="row">
+                <div class="col col-33">
+                    <label class="item item-input item-mod">
+                        <input type="text"
+                               ng-model="nameInput"
+                               placeholder="Someone"
+                               style="color:#ffc900;
+                               font-family: Play;">
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="item item-icon-right item-input item-mod">
+                        <input type='text'
+                               ng-model="messageInput"
+                               placeholder='Type a message...'
+                               style="color:#ffffff;
+                               font-family: Play;">
+                        <i class="icon ion-paper-airplane"
+                           ng-click="addMessage(nameInput, messageInput)"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ion-footer-bar>
+</ion-view>

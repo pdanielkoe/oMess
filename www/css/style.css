@@ -1,0 +1,43 @@
+/* Empty. Add your own CSS if you like */
+.bar-footer-mod {
+    height: 138px;
+}
+
+.has-footer {
+    bottom: 138px;
+}
+
+ion-content {
+    background-color: #686868;
+}
+
+.item-mod {
+    background-color: #686868;
+    color: #ffc900;
+    font-family: Play;
+    border-color: #ffc900;
+}
+
+body {
+    font-family: Play;
+}
+
+.card-mod {
+    background-color: #868686;
+    color: #ffffff;
+    font-family: Play;
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 26.4px;
+    letter-spacing: 1px;
+}
+
+.text-energized {
+    color: #ffc900;
+}
+
+.msg-time{
+    font-size:12px;
+}

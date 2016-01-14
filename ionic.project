@@ -1,0 +1,12 @@
+{
+  "name": "oMess",
+  "app_id": "com.koegu.omess",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}
